@@ -1,35 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>courseek | Find your course faster</title>
   <link rel="stylesheet" href="./scripts/dashboard.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
   <!-- the header goes here -->
-  <header>
-    <div class="logo">
-      <p>cours<span>ee</span>k</p>
-    </div>
-    <div class = "profile">
-      <div class="img_wrapper">  
-        <img src = "/client/images/averter.jpg" id = "image">
-      </div>
-      <p id="username">User Name</p>
-    </div>
-  </header>
-  <!-- the body goes here -->
-  <div class = "backimg"></div>
-    <div class = "course-wraper">
-      <div class = "course"></div>
-      <div class = "course"></div>
-      <div class = "course"></div>
-      <div class = "course"></div>
-    </div>
-  </div>
+  <main class="main">
 
+   <div class="sidebar">
+      <div class="home-icon">
+          <i class="fa fa-home" style="font-size:24px"></i>
+        </div>
+
+        <div class="nav-course">
+            <div class="icon-wraper">
+                <h5>Courses</h5>
+                <i class="fa fa-book" style="font-size:24px"></i>
+            </div>
+
+            <div class="icon-wraper">
+                <h5>Free</h5>
+                <i class="fa fa-flag" style="font-size:24px"></i>
+            </div>
+
+            <div class="icon-wraper">
+                <h5>Paid</h5>
+                <i class="fa fa-money" style="font-size:24px"></i>
+            </div>
+
+            <div class="icon-wraper">
+                <h5>Article</h5>
+                <i class="fa fa-file-word-o" style="font-size:24px"></i>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Level</button>
+                <div class="dropdown-content">
+                  <a href="#">Beginner</a>
+                  <a href="#">Intermediate</a>
+                  <a href="#">Advanced</a>
+                </div>
+            </div>   
+        </div>
+
+        <div class="logout-icon">
+            <h5>LogOut</h5>
+            <i class="fa fa-sign-out"></i>
+         </div>
+    </div>
+        
+    <aside class="rigth_wrp">
+
+      <header>
+        <div class="logo">
+          <p>cours<span>ee</span>k</p>
+        </div>
+        <div class="profile">
+          <div class="img_wrapper">
+            <img src="/client/images/averter.jpg" id="image">
+          </div>
+          <p id="username">User Name</p>
+        </div>
+      </header>
+
+      <!-- the body goes here -->
+
+      <div class="backimg">
+        <div class="backimg-text">
+          <h1 style="font-size:50px">Your certisfaction is all that matters</h1>
+          <p>We do hope you get what you want</p>
+          <button>Check Your Progress</button>
+        </div>
+      </div>
+      <div class="course-cards">
+        <div class="card-wraper">
+          <div class="card">
+            <img src="/client/images/masterCoding.jpeg" alt="master coding" style="width:100%">
+            <h3>Master Coding With Exercism</h3>
+            <p class="price">$19.99</p>
+            <p>Do you believe you can actually master programming with the speed of light? All you need is not far from you.
+              Take advantage of this book...</p>
+            <p>
+              <button>Add to Cart</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+            <h3>Mathematical Coding</h3>
+            <p class="price">$25</p>
+            <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+              of</p>
+            <p>
+              <button>Add to Cart</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/howtochose.jpeg" alt="choosing a programming lang." style="width:100%">
+            <h3>Choosing a Language</h3>
+            <p class="price">Free</p>
+            <p>Do not fall victim of choosing the best language for yourself. Take this self guide for article</p>
+            <p>
+              <button>Download</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="card-wraper">
+          <div class="card">
+            <img src="/client/images/js.png" alt="master coding" style="width:100%">
+            <h3>Master Coding With Exercism</h3>
+            <p class="price">Free</p>
+            <p>Do you believe you can actually master programming with the speed of light? All you need is not far from you.
+              Take advantage of this book...</p>
+            <p>
+              <button>Download</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/career.jpeg" alt="maths coding" style="width:100%">
+            <h3>Mathematical Coding</h3>
+            <p class="price">Free</p>
+            <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+              of</p>
+            <p>
+              <button>download</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/rp.png" alt="choosing a programming lang." style="width:100%">
+            <h3>Choosing a Language</h3>
+            <p class="price">$19.55</p>
+            <p>Do not fall victim of choosing the best language for yourself. Take this self guide for article</p>
+            <p>
+              <button>Add to Cart</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </main>
   <script src="/scripts/bundle.js"></script>
 </body>
+
 </html>
