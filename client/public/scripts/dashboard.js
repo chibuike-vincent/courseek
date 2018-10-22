@@ -6,8 +6,10 @@ courses.addEventListener("click", function () {
   fetch("https://www.udacity.com/public-api/v1/courses", {
       method:'post',
       headers: {
-        'Content-Type': 'Application/json',
-        'Accept':'Application/json'
+        "Access-Control-Allow-Origin": "*",
+        'Access-Control-Allow-Origin': 'https://www.udacity.com/public-api/v1/courses',
+        'Access-Control-Allow-Origin': 'https://www.udacity.com/public-api/v1/courses'
+
       }
     })
     .then((blob) => blob.json())
