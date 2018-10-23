@@ -19,38 +19,38 @@
 
     <div class="sidebar">
       <div class="home-icon">
-        <i class="fa fa-home" style="font-size:24px"></i>
+       <a href="dashboard.html"> <i class="fa fa-home" style="font-size:24px"></i></a>
       </div>
 
       <div class="nav-course">
-        <div class="icon-wraper">
+        <div class="icon-wraper" id = "courses">
           <i class="fa fa-book" id = "courselist" style="font-size:24px"></i>
           <h5>Courses</h5>
         </div>
 
-        <div class="icon-wraper">
+        <div class="icon-wraper" id= "free">
           <i class="fa fa-flag" style="font-size:24px"></i>
           <h5>Free</h5>
         </div>
 
-        <div class="icon-wraper">
+        <div class="icon-wraper" id = "paid">
           <i class="fa fa-money" style="font-size:24px"></i>
           <h5>Paid</h5>
         </div>
 
-        <div class="icon-wraper">
+        <div class="icon-wraper" id = "video">
             <i class="fa fa-video-camera" style="font-size:24px"></i>
             <h5>Video</h5>
           </div>
 
-        <div class="icon-wraper">
+        <div class="icon-wraper" id = "article"> 
           <i class="fa fa-pencil" style="font-size:24px"></i>
           <h5>Article</h5>
         </div>
 
       </div>
 
-      <div class="logout-icon">
+      <div class="logout-icon" id = "logout">
         <i class="fa fa-sign-out"></i>
         <h5>LogOut</h5>
       </div>
@@ -111,8 +111,110 @@
         </div>
       </header>
 
-      <!-- the body goes here -->
+      <div id = "courses_content">
 
+        <div class="all-courses">
+          <div class="all-course-card-wraper">
+            <div class = "row">
+            <div class="card">
+              <img src="/client/images/masterCoding.jpeg" alt="master coding" style="width:100%">
+              <h3>Master Coding With Exercism</h3>
+              <p class="price">#99.11</p>
+              <p>Do you believe you can actually master programming with the speed of light? All you need is not far from you.
+                </p>
+              <p>
+                <button class="cancel">Add to Cart</button>
+              </p>
+            </div>
+  
+            <div class="card">
+              <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+              <h3>Maths Coding</h3>
+              <p class="price">Free</p>
+              <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+                of
+              </p>
+              <p>
+                <button class="cancel">Download</button>
+              </p>
+            </div>
+  
+            <div class="card">
+              <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+              <h3>Maths Coding 2</h3>
+              <p class="price">Free</p>
+              <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+                of
+              </p>
+              <p>
+                <button>Download</button>
+              </p>
+            </div>
+  
+            <div class="card" id = "addtocart">
+              <img src="/client/images/howtochose.jpeg" alt="choosing a programming lang." style="width:100%">
+              <h3>Choosing a Language</h3>
+              <p class="price">$10</p>
+              <p>Do not fall victim of choosing the best language for yourself. Take this self guide for article</p>
+              <p>
+                <button>Add to Cart</button>
+              </p>
+            </div>
+            </div>
+            <div class = "row">
+                <div class="card">
+                    <img src="/client/images/masterCoding.jpeg" alt="master coding" style="width:100%">
+                    <h3>Master Coding With Exercism</h3>
+                    <p class="price">$30</p>
+                    <p>Do you believe you can actually master programming with the speed of light? All you need is not far from you.
+                      </p>
+                    <p>
+                      <button>Add to Cart</button>
+                    </p>
+                  </div>
+        
+                  <div class="card">
+                    <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+                    <h3>Maths Coding</h3>
+                    <p class="price">Free</p>
+                    <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+                      of
+                    </p>
+                    <p>
+                      <button>Download</button>
+                    </p>
+                  </div>
+        
+                  <div class="card">
+                    <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+                    <h3>Maths Coding 2</h3>
+                    <p class="price">Free</p>
+                    <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+                      of
+                    </p>
+                    <p>
+                      <button>Download</button>
+                    </p>
+                  </div>
+        
+                  <div class="card">
+                    <img src="/client/images/howtochose.jpeg" alt="choosing a programming lang." style="width:100%">
+                    <h3>Choosing a Language</h3>
+                    <p class="price">$45</p>
+                    <p>Do not fall victim of choosing the best language for yourself. Take this self guide for article</p>
+                    <p>
+                      <button>Add to Cart</button>
+                    </p>
+                  </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+
+      <!-- the body goes here -->
+      <div id = "body_view">
       <div class="backimg">
         <div class="backimg-text">
           <h1 style="font-size:50px">Available courses based on your search category </h1>
@@ -137,9 +239,9 @@
         <div class="card-wraper">
           <div class="card">
             <img src="/client/images/masterCoding.jpeg" alt="master coding" style="width:100%">
-            <h3>Master Coding With Exercism</h3>
+            <h3>Master Coding Fast</h3>
             <p class="price">Free</p>
-            <p>Do you believe you can actually master programming with the speed of light? All you need is not far from you.
+            <p>Do you believe you can actually master programming with the speed of light?
               </p>
             <p>
               <button>Download</button>
@@ -150,7 +252,7 @@
             <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
             <h3>Maths Coding</h3>
             <p class="price">$25</p>
-            <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+            <p>You do not need to be a mathematician to go into Mathematical programming...
               of
             </p>
             <p>
@@ -162,6 +264,262 @@
             <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
             <h3>Maths Coding 2</h3>
             <p class="price">$25</p>
+            <p>You do not need to be a mathematician to go into Mathematical programming.
+            </p>
+            <p>
+              <button>Add to Cart</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/howtochose.jpeg" alt="choosing a programming lang." style="width:100%">
+            <h3>Choosing a Language</h3>
+            <p class="price">Free</p>
+            <p>Do not fall victim of choosing the best language for yourself.</p>
+            <p>
+              <button>Download</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id = "free_courses_content">
+
+      <div class="all-courses">
+        <div class="all-course-card-wraper">
+          <div class = "row">
+          <div class="card">
+            <img src="/client/images/masterCoding.jpeg" alt="master coding" style="width:100%">
+            <h3>Master Coding With Exercism</h3>
+            <p class="price">Free</p>
+            <p>Do you believe you can actually master programming with the speed of light? All you need is not far from you.
+              </p>
+            <p>
+              <button class="cancel">Download</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+            <h3>Maths Coding</h3>
+            <p class="price">Free</p>
+            <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+              of
+            </p>
+            <p>
+              <button class="cancel">Download</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+            <h3>Maths Coding 2</h3>
+            <p class="price">Free</p>
+            <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+              of
+            </p>
+            <p>
+              <button>Download</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/howtochose.jpeg" alt="choosing a programming lang." style="width:100%">
+            <h3>Choosing a Language</h3>
+            <p class="price">Free</p>
+            <p>Do not fall victim of choosing the best language for yourself. Take this self guide for article</p>
+            <p>
+              <button>Download</button>
+            </p>
+          </div>
+          </div>
+          <div class = "row">
+              <div class="card">
+                  <img src="/client/images/masterCoding.jpeg" alt="master coding" style="width:100%">
+                  <h3>Master Coding With Exercism</h3>
+                  <p class="price">Free</p>
+                  <p>Do you believe you can actually master programming with the speed of light? All you need is not far from you.
+                    </p>
+                  <p>
+                    <button>Download</button>
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+                  <h3>Maths Coding</h3>
+                  <p class="price">Free</p>
+                  <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+                    of
+                  </p>
+                  <p>
+                    <button>Download</button>
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+                  <h3>Maths Coding 2</h3>
+                  <p class="price">Free</p>
+                  <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+                    of
+                  </p>
+                  <p>
+                    <button>Download</button>
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img src="/client/images/howtochose.jpeg" alt="choosing a programming lang." style="width:100%">
+                  <h3>Choosing a Language</h3>
+                  <p class="price">Free</p>
+                  <p>Do not fall victim of choosing the best language for yourself. Take this self guide for article</p>
+                  <p>
+                    <button>Download</button>
+                  </p>
+                </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <div id = "paid_courses_content">
+
+      <div class="all-courses">
+        <div class="all-course-card-wraper">
+          <div class = "row">
+          <div class="card">
+            <img src="/client/images/masterCoding.jpeg" alt="master coding" style="width:100%">
+            <h3>Master Coding With Exercism</h3>
+            <p class="price">#99.11</p>
+            <p>Do you believe you can actually master programming with the speed of light? All you need is not far from you.
+              </p>
+            <p>
+              <button class="cancel">Add to cart</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+            <h3>Maths Coding</h3>
+            <p class="price">$20</p>
+            <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+              of
+            </p>
+            <p>
+              <button class="cancel">Add to cart</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+            <h3>Maths Coding 2</h3>
+            <p class="price">$5</p>
+            <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+              of
+            </p>
+            <p>
+              <button>Add to Cart</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/howtochose.jpeg" alt="choosing a programming lang." style="width:100%">
+            <h3>Choosing a Language</h3>
+            <p class="price">$10</p>
+            <p>Do not fall victim of choosing the best language for yourself. Take this self guide for article</p>
+            <p>
+              <button>Add to Cart</button>
+            </p>
+          </div>
+          </div>
+          <div class = "row">
+              <div class="card">
+                  <img src="/client/images/masterCoding.jpeg" alt="master coding" style="width:100%">
+                  <h3>Master Coding With Exercism</h3>
+                  <p class="price">$30</p>
+                  <p>Do you believe you can actually master programming with the speed of light? All you need is not far from you.
+                    </p>
+                  <p>
+                    <button>Add to Cart</button>
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+                  <h3>Maths Coding</h3>
+                  <p class="price">$29</p>
+                  <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+                    of
+                  </p>
+                  <p>
+                    <button>Add to Cart</button>
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+                  <h3>Maths Coding 2</h3>
+                  <p class="price">$12</p>
+                  <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+                    of
+                  </p>
+                  <p>
+                    <button>Add to Cart</button>
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img src="/client/images/howtochose.jpeg" alt="choosing a programming lang." style="width:100%">
+                  <h3>Choosing a Language</h3>
+                  <p class="price">$45</p>
+                  <p>Do not fall victim of choosing the best language for yourself. Take this self guide for article</p>
+                  <p>
+                    <button>Add to Cart</button>
+                  </p>
+                </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <div id = "video_courses_content">
+
+      <div class="all-courses">
+        <div class="all-course-card-wraper">
+          <div class = "row">
+          <div class="card">
+            <img src="/client/images/masterCoding.jpeg" alt="master coding" style="width:100%">
+            <h3>Master Coding With Exercism</h3>
+            <p class="price">Free</p>
+            <p>Do you believe you can actually master programming with the speed of light? All you need is not far from you.
+              </p>
+            <p>
+              <button class="cancel">Download</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+            <h3>Maths Coding</h3>
+            <p class="price">$20</p>
+            <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+              of
+            </p>
+            <p>
+              <button class="cancel">Add to Cart</button>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+            <h3>Maths Coding 2</h3>
+            <p class="price">$5</p>
             <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
               of
             </p>
@@ -179,13 +537,62 @@
               <button>Download</button>
             </p>
           </div>
+          </div>
+          <div class = "row">
+              <div class="card">
+                  <img src="/client/images/masterCoding.jpeg" alt="master coding" style="width:100%">
+                  <h3>Master Coding With Exercism</h3>
+                  <p class="price">$30</p>
+                  <p>Do you believe you can actually master programming with the speed of light? All you need is not far from you.
+                    </p>
+                  <p>
+                    <button>Add to Cart</button>
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+                  <h3>Maths Coding</h3>
+                  <p class="price">Free</p>
+                  <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+                    of
+                  </p>
+                  <p>
+                    <button>Download</button>
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img src="/client/images/justimg.jpeg" alt="maths coding" style="width:100%">
+                  <h3>Maths Coding 2</h3>
+                  <p class="price">Free</p>
+                  <p>You do not need to be a mathematician to go into Mathematical programming, it is easier than you can ever think
+                    of
+                  </p>
+                  <p>
+                    <button>Download</button>
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img src="/client/images/howtochose.jpeg" alt="choosing a programming lang." style="width:100%">
+                  <h3>Choosing a Language</h3>
+                  <p class="price">$45</p>
+                  <p>Do not fall victim of choosing the best language for yourself. Take this self guide for article</p>
+                  <p>
+                    <button>Add to Cart</button>
+                  </p>
+                </div>
+          </div>
         </div>
       </div>
+      
+    </div>
     </aside>
     
 
   </main>
-  <script src="./scripts/dashboard.js"></script>
+  <script src="../src/dashboard.js"></script>
   <script src="/scripts/bundle.js"></script>
 
 </body>
